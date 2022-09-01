@@ -1,0 +1,36 @@
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+td,
+th {
+    text-align: center;
+}
+
+.table th,
+.table td {
+    border: 1px solid #000;
+}
+
+th {
+    border: 1px solid black;
+    background-color: pink;
+}
+
+
+
+.fila-1 td {
+    background-color: yellow;
+}
+
+tr .celda-izq {
+    background-color: grey;
+}
+
+img {
+    float: left;
+    margin-right: 5px;
+}

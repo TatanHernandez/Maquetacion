@@ -1,15 +1,16 @@
+
 main {
   display: grid;
-  grid-template-rows: 20% 70% 10%;
+  grid-template-rows: 18% 72% 10%;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0,1fr;
   grid-template-areas:
-    "logo header header header header "
+    "logo header header header login "
     "aside section section section section"
-    "footer footer footer footer footer";
+    "footer footer footer footer logotipo1";
 
-  row-gap: 10px;
-  column-gap: 10px;
+  row-gap: 0px;
+  column-gap: 0px;
   height: 98vh;
 }
 
@@ -37,23 +38,75 @@ footer {
 .logo {
   grid-area: logo;
   border: 1px solid rgb(0, 0, 0);
+  text-align: center;
 }
 
+.login {
+  grid-area: login;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+
+.logotipo1{
+  grid-area: logotipo1;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.logo img{
+  margin-top: 18px;
+  height: 92px;
+}
+.login img{
+  margin-top: 30px;
+}
+.logotipo1 img{
+  margin-top: 10px;
+  height: 50px;
+}
 section .contenedor {
   display: flex;
-  background-color: bisque;
   justify-content: space-around;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
   column-gap: 25px;
   row-gap: 35px;
-  height: 448px;
+  height: 468px;
 }
 
-.contenedor article {
-  background-color: rgb(159, 203, 0);
-  width: 30%;
-  height: 30%;
+.contenedor a {
+  width: 40%;
+  height: 40%;
   text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+header h1{
+  margin-top: 40px;
+}
+
+.contenedor a h4{
+  margin-top: 75px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.lista-aside ul{
+  list-style: none;
+  
+}
+
+.lista-aside ul li{
+  border: 1px solid black;
+  margin-top: 40px;
+  margin-right: 30px;
 }
